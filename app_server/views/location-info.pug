@@ -1,0 +1,77 @@
+extends layout
+block content
+  .row.banner
+    .col-12
+      h1 Brandon Hotel
+  .row
+    .col-12.col-lg-9
+      .row
+        .col-12.col-md-6
+          p.rating
+            i.fa.fa-star
+            i.fa.fa-star
+            i.fa.fa-star
+            i.fa.fa-star-o
+            i.fa.fa-star-o
+          p Prince's St, Tralee, Co. Kerry, V92 PVK6
+          .card.card-primary
+            .card-block
+              h2.card-title Opening hours
+              p.card-text Monday - Friday : 7:00am - 11:00pm
+              p.card-text Saturday : 8:00am - 11:00pm
+              p.card-text Sunday : 8:00am - 11:00pm
+          .card.card-primary
+            .card-block
+              h2.card-title Facilities
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Hot drinks
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Food
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Premium wifi
+              | &nbsp;
+        .col-12.col-md-6.location-map
+          .card.card-primary
+            .card-block
+              h2.card-title Location map
+              img.img-fluid.rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+      .row
+        .col-12
+          .card.card-primary.review-card
+            .card-block
+              a.btn.btn-primary.float-right(href='/location/review/new') Add review
+              h2.card-title Customer reviews
+              .row.review
+                .col-12.no-gutters.review-header
+                  span.rating
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                    i.fa.fa-star-o
+                  span.reviewAuthor Simon Holmes
+                  small.reviewTimestamp 16 February 2017
+                .col-12
+                  p What a great place. I can't say enough good things about it.
+              .row.review
+                .col-12.no-gutters.review-header
+                  span.rating
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                    i.fa.fa-star-o
+                  span.reviewAuthor Charlie Chaplin
+                  small.reviewTimestamp 14 February 2017
+                .col-12
+                  p It was okay. Food wasn't great, but the rooms and staff were lovely.
+    .col-12.col-lg-3
+      p.lead
+        | Brandon Hotel is on Hotel Finder because it caters for weddings and large space to house your guest and have some fun.
+      p
+        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
