@@ -1,0 +1,64 @@
+extends layout
+block content
+  .row.banner
+    .col-12
+        h1=pageHeader.title 
+            small &nbsp;#{pageHeader.strapline}
+
+  .row
+    .col-12.col-md-8
+
+      .card
+        .card-block
+          h4
+            a(href="/location") Brandon Hotel
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-o
+              i.fa.fa-star-o
+            span.badge.badge-pill.badge-default.float-right €100
+          p.address Prince's St, Tralee, Co. Kerry, V92 PVK6
+          .facilities
+            span.badge.badge-warning Dance Hall
+            span.badge.badge-warning Good Food
+            span.badge.badge-warning Premium weddding room
+
+      .card
+        .card-block
+          h4
+            a(href="/location") Ballygarry Hotel
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-o
+              i.fa.fa-star-o
+              i.fa.fa-star-o
+            span.badge.badge-pill.badge-default.float-right €200
+          p.address Leebrook, Tralee, Co.Kerry, V92 W279
+          .facilities
+            span.badge.badge-warning Chapel
+            span.badge.badge-warning Excellent Food
+            span.badge.badge-warning Premium service
+
+      .card
+        .card-block
+          h4
+            a(href="/location") Meadowlands Hotel
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+            span.badge.badge-pill.badge-default.float-right €99
+          p.address Oakpark, Tralee, Co.Kerry
+          .facilities
+            span.badge.badge-warning DJ
+            span.badge.badge-warning Great Food
+            span.badge.badge-warning Premium rooms
+
+    .col-12.col-md-4
+      p.lead Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.
+
